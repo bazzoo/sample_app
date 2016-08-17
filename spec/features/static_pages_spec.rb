@@ -1,6 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe "StaticPages", type: :request do
+
+	let(:base_title) {"Ruby on Rails Sample App"}
+
 	describe "Home page" do 
 		it "should have the h1 'Sample App'" do
 			visit '/static_pages/home'
